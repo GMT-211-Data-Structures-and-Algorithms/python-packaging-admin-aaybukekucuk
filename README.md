@@ -1,25 +1,36 @@
-SHORTESTPATH21967646 - DIJKSTRA'S ALGORITHM PACKAGE
-📌 OVERVIEW
-This Python package implements Dijkstra's algorithm to find the shortest path in a directed graph. Designed for reliability and ease of use, it's suitable for both educational and professional applications.
+# shortestpath21967646
 
-🚀 FEATURES
-Feature	Description
-Shortest path search	Finds shortest path with Dijkstra method
-Logging	Tracks important steps in the algorithm
-Unit Testing	Tested using pytest for reliability
-Easy Installation	Available on TestPyPI for quick setup
-📸 SCREENSHOTS
-https://./screenshots/pytest_passed.png
-All tests passed with pytest.
+This Python package implements **Dijkstra’s algorithm** to find the shortest path in a directed graph.  
+It is designed to be simple, testable, and ready for deployment on TestPyPI.
 
-https://./screenshots/twine_uploaded.png
-Package uploaded successfully to TestPyPI.
+---
 
-💻 INSTALLATION
-bash
+## Features
+
+- Calculates shortest paths using Dijkstra’s algorithm  
+- Takes graph input as a dictionary  
+- Includes logging support  
+- Tested with `pytest`  
+- Includes GitHub Actions CI/CD  
+- Packaged and published to TestPyPI  
+- Sphinx documentation support  
+- AI-assisted code development (with ChatGPT)
+
+---
+
+## Installation
+
+To install the package from TestPyPI, run the following command:
+
+```bash
 pip install --index-url https://test.pypi.org/simple/ shortestpath21967646
-🛠 USAGE
-python
+
+---
+
+## Usage Example
+
+You can import and use the dijkstra function like this:
+
 from sp211_21967646_98.sp211_21967646_98 import dijkstra
 
 graph = {
@@ -30,43 +41,78 @@ graph = {
 }
 
 distances = dijkstra(graph, 'A')
-print(distances)  # Output: {'A': 0, 'B': 1, 'C': 3, 'D': 4}
-📂 PROJECT STRUCTURE
-text
-sp211_21967646_98/
+print(distances)
+
+---
+
+## Expected output:
+
+{'A': 0, 'B': 1, 'C': 3, 'D': 4}
+
+---
+
+## Project Structure
+
+sp211_21967646_98_(2)/
 ├── sp211_21967646_98/
 │   ├── __init__.py
-│   └── sp211_21967646_98.py      # Core algorithm
+│   └── sp211_21967646_98.py      # Dijkstra algorithm implementation
 ├── tests/
-│   └── test_sp211_21967646_98.py  # Test suite
-├── setup.py                       # Package config
-├── requirements.txt               # Dependencies
-├── .github/
-│   └── workflows/
-│       └── python-test.yml        # CI/CD pipeline
-├── dist/                          # Distribution files
-└── docs/                          # Documentation
-🔄 CONTINUOUS INTEGRATION
-GitHub Actions automates:
+│   └── test_sp211_21967646_98.py # Unit tests
+├── setup.py                      # Package config
+├── requirements.txt              # Dependencies
+├── README.md                     # Project documentation
+├── dist/                         # Distribution files
+├── docs/                         # Sphinx docs
+└── .github/
+    └── workflows/
+        └── python-test.yml       # GitHub Actions CI
 
-✅ Test execution on every push
+---
 
-📦 Package building and deployment
+## Pytest Passed
 
-🧪 Quality assurance checks
+---
 
-🤖 AI ASSISTANCE
-Used ChatGPT for:
+## Package Uploaded to TestPyPI
+Successfully uploaded with twine.
 
-Algorithm optimization (4/5 effectiveness)
+---
 
-Test case generation
+## Continuous Integration / Delivery
 
-CI/CD configuration
+This project uses GitHub Actions for:
 
-Documentation formatting
+*Automatically running pytest after every push
 
-📧 CONTACT
-Author: Aybuke Kucuk
-Email: aaybukekucuk@gmail.com
-GitHub: python-packaging-admin-aaybukekucuk
+*Ensuring that the package builds correctly
+
+*Verifying the installation and packaging process
+
+CI configuration can be found in .github/workflows/python-test.yml.
+
+---
+
+## AI Usage
+
+I used ChatGPT to:
+
+*Write and debug the dijkstra function
+*Build the correct setup.py, README.md, and requirements.txt
+*Configure GitHub Actions
+*Prepare the project structure
+*Fix test errors and improve packaging
+*Generate full Sphinx documentation
+
+AI support helped me write better, faster, and more organized code.
+
+---
+
+## Author
+
+*Name: Aybuke Kucuk
+*Email: aaybukekucuk@gmail.com
+*GitHub: Project Repo
+*DD Code: 98
+
+---
