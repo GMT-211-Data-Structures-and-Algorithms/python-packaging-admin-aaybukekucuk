@@ -88,7 +88,7 @@ All unit tests successfully passed.
 
 Successfully uploaded with `twine`.
 
-![Package Uploaded](./screenshots/twine_uploaded.png)
+![Ekran görüntüsü 2025-06-23 072211](https://github.com/user-attachments/assets/7153d6cb-d335-4e5d-acba-7a9bfe67095a)
 
 ---
 
