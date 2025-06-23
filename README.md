@@ -18,7 +18,8 @@ It is designed for easy use, testing, and deployment.
 
 ## Screenshots
 
-![Tests Passed](./screenshots/pytest_passed.png)  
+![Ekran görüntüsü 2025-06-23 024354](https://github.com/user-attachments/assets/d9a57c9c-22d7-4182-9382-4413f67de66a)
+
 *All tests passed with pytest.*
 
 ![Package Uploaded](./screenshots/twine_uploaded.png)  
