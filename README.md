@@ -1,5 +1,8 @@
 # shortestpath21967646
 
+[![Documentation Status](https://readthedocs.org/projects/shortestpath21967646/badge/?version=latest)](https://shortestpath21967646.readthedocs.io/en/latest/?badge=latest)
+
+
 This Python package implements **Dijkstra’s algorithm** to find the shortest path in a directed graph.  
 It is designed to be simple, testable, and ready for deployment on TestPyPI.
 
