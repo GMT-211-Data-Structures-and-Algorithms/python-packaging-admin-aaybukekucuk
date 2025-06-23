@@ -24,13 +24,15 @@ To install the package from TestPyPI, run the following command:
 
 ```bash
 pip install --index-url https://test.pypi.org/simple/ shortestpath21967646
+```
 
 ---
 
 ## Usage Example
 
-You can import and use the dijkstra function like this:
+You can import and use the `dijkstra` function like this:
 
+```python
 from sp211_21967646_98.sp211_21967646_98 import dijkstra
 
 graph = {
@@ -42,17 +44,19 @@ graph = {
 
 distances = dijkstra(graph, 'A')
 print(distances)
+```
 
----
+Expected output:
 
-## Expected output:
-
+```
 {'A': 0, 'B': 1, 'C': 3, 'D': 4}
+```
 
 ---
 
 ## Project Structure
 
+```
 sp211_21967646_98_(2)/
 ├── sp211_21967646_98/
 │   ├── __init__.py
@@ -67,15 +71,23 @@ sp211_21967646_98_(2)/
 └── .github/
     └── workflows/
         └── python-test.yml       # GitHub Actions CI
+```
 
 ---
 
-## Pytest Passed
+## Screenshots
 
----
+### ✅ Pytest Passed
 
-## Package Uploaded to TestPyPI
-Successfully uploaded with twine.
+All unit tests successfully passed.
+
+![Tests Passed](./screenshots/pytest_passed.png)
+
+### 📦 Package Uploaded to TestPyPI
+
+Successfully uploaded with `twine`.
+
+![Package Uploaded](./screenshots/twine_uploaded.png)
 
 ---
 
@@ -83,26 +95,24 @@ Successfully uploaded with twine.
 
 This project uses GitHub Actions for:
 
-*Automatically running pytest after every push
+- Automatically running `pytest` after every push  
+- Ensuring that the package builds correctly  
+- Verifying the installation and packaging process
 
-*Ensuring that the package builds correctly
-
-*Verifying the installation and packaging process
-
-CI configuration can be found in .github/workflows/python-test.yml.
+CI configuration can be found in `.github/workflows/python-test.yml`.
 
 ---
 
 ## AI Usage
 
-I used ChatGPT to:
+I used **ChatGPT** to:
 
-*Write and debug the dijkstra function
-*Build the correct setup.py, README.md, and requirements.txt
-*Configure GitHub Actions
-*Prepare the project structure
-*Fix test errors and improve packaging
-*Generate full Sphinx documentation
+- Write and debug the `dijkstra` function  
+- Build the correct `setup.py`, `README.md`, and `requirements.txt`  
+- Configure GitHub Actions  
+- Prepare the project structure  
+- Fix test errors and improve packaging  
+- Generate full Sphinx documentation
 
 AI support helped me write better, faster, and more organized code.
 
@@ -110,9 +120,10 @@ AI support helped me write better, faster, and more organized code.
 
 ## Author
 
-*Name: Aybuke Kucuk
-*Email: aaybukekucuk@gmail.com
-*GitHub: Project Repo
-*DD Code: 98
+- Name: **Aybuke Kucuk**  
+- Email: [aaybukekucuk@gmail.com](mailto:aaybukekucuk@gmail.com)  
+- GitHub: [Project Repo](https://github.com/GMT-211-Data-Structures-and-Algorithms/python-packaging-admin-aaybukekucuk)
 
 ---
+
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/i1ecLyyK)
