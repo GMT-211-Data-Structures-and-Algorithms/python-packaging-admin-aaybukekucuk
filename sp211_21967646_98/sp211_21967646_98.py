@@ -1,9 +1,16 @@
 import heapq
 import logging
 
-# Logging ayarları
-logging.basicConfig(level=logging.INFO)
+# Logger ayarları
 logger = logging.getLogger(__name__)
+logging.basicConfig(level=logging.INFO)
+
+def set_log_level(level_name):
+    level = getattr(logging, level_name.upper(), None)
+    if not isinstance(level, int):
+        raise ValueError(f'Invalid log level: {level_name}')
+    logging.getLogger().setLevel(level)
+    logger.info(f"Logging level set to {level_name}")
 
 def dijkstra(graph, start):
     logger.info(f"Starting Dijkstra from node: {start}")
@@ -26,9 +33,3 @@ def dijkstra(graph, start):
                 heapq.heappush(pq, (distance, neighbor))
 
     return distances
-
-def set_log_level(level_name):
-    """Change the logging level dynamically."""
-    level = getattr(logging, level_name.upper(), logging.INFO)
-    logger.setLevel(level)
-    logger.info(f"Logging level set to {level_name.upper()}")

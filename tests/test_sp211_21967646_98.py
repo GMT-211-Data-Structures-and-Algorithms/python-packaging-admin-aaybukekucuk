@@ -11,18 +11,13 @@ def test_dijkstra_simple():
         'C': [('D', 1)],
         'D': []
     }
-
     result = dijkstra(graph, 'A')
-    # print(result)  # Testlerde print kullanmamak daha iyidir.
-
     assert result['D'] == 4
     assert result['C'] == 3
     assert result['B'] == 1
     assert result['A'] == 0
 
-def test_set_log_level():
-    try:
+def test_set_log_level(caplog):
+    with caplog.at_level("DEBUG"):
         set_log_level("DEBUG")
-    except Exception:
-        import pytest
-        pytest.fail("set_log_level raised an exception unexpectedly!")
+        assert any(record.levelno == 10 for record in caplog.records)
