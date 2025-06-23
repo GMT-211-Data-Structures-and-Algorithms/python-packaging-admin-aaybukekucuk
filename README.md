@@ -1,41 +1,25 @@
-# shortestpath21967646
+SHORTESTPATH21967646 - DIJKSTRA'S ALGORITHM PACKAGE
+📌 OVERVIEW
+This Python package implements Dijkstra's algorithm to find the shortest path in a directed graph. Designed for reliability and ease of use, it's suitable for both educational and professional applications.
 
-This Python package implements **Dijkstra’s algorithm** to find the shortest path in a directed graph.  
-It is designed for easy use, testing, and deployment.
+🚀 FEATURES
+Feature	Description
+Shortest path search	Finds shortest path with Dijkstra method
+Logging	Tracks important steps in the algorithm
+Unit Testing	Tested using pytest for reliability
+Easy Installation	Available on TestPyPI for quick setup
+📸 SCREENSHOTS
+https://./screenshots/pytest_passed.png
+All tests passed with pytest.
 
----
+https://./screenshots/twine_uploaded.png
+Package uploaded successfully to TestPyPI.
 
-## Features
-
-| Feature              | Description                                |
-|----------------------|--------------------------------------------|
-| Shortest path search  | Finds shortest path with Dijkstra method  |
-| Logging              | Tracks important steps in the algorithm   |
-| Unit Testing         | Tested using pytest for reliability        |
-| Easy Installation    | Available on TestPyPI for quick setup      |
-
----
-
-## Screenshots
-
-![Tests Passed](./screenshots/pytest_passed.png)  
-*All tests passed with pytest.*
-
-![Package Uploaded](./screenshots/twine_uploaded.png)  
-*Package uploaded successfully to TestPyPI.*
-
----
-
-## Installation
-
-You can install the package from TestPyPI using:
-
-```bash
+💻 INSTALLATION
+bash
 pip install --index-url https://test.pypi.org/simple/ shortestpath21967646
-
----
-
-## Usage Example
+🛠 USAGE
+python
 from sp211_21967646_98.sp211_21967646_98 import dijkstra
 
 graph = {
@@ -46,65 +30,43 @@ graph = {
 }
 
 distances = dijkstra(graph, 'A')
-print(distances)
-
-Expected output:
-
-{'A': 0, 'B': 1, 'C': 3, 'D': 4}
-
----
-
-## Project Structure
-
-sp211_21967646_98_(2)/
+print(distances)  # Output: {'A': 0, 'B': 1, 'C': 3, 'D': 4}
+📂 PROJECT STRUCTURE
+text
+sp211_21967646_98/
 ├── sp211_21967646_98/
 │   ├── __init__.py
-│   └── sp211_21967646_98.py      # Dijkstra algorithm implementation
+│   └── sp211_21967646_98.py      # Core algorithm
 ├── tests/
-│   └── test_sp211_21967646_98.py # Unit tests for the package
-├── setup.py                      # Package configuration
-├── requirements.txt              # Dependencies list
-├── README.md                    # Project description and instructions
+│   └── test_sp211_21967646_98.py  # Test suite
+├── setup.py                       # Package config
+├── requirements.txt               # Dependencies
 ├── .github/
 │   └── workflows/
-│       └── python-test.yml      # GitHub Actions workflow for CI/CD
-├── dist/                        # Distribution files for packaging
-└── docs/                        # Documentation files (Sphinx)
+│       └── python-test.yml        # CI/CD pipeline
+├── dist/                          # Distribution files
+└── docs/                          # Documentation
+🔄 CONTINUOUS INTEGRATION
+GitHub Actions automates:
 
----
+✅ Test execution on every push
 
-## Continuous Integration / Delivery
-This project uses GitHub Actions to:
+📦 Package building and deployment
 
-*Automatically run tests on every push
+🧪 Quality assurance checks
 
-*Build and upload the package to TestPyPI automatically
+🤖 AI ASSISTANCE
+Used ChatGPT for:
 
-*This helps maintain code quality and simplifies updates.
+Algorithm optimization (4/5 effectiveness)
 
----
+Test case generation
 
-## AI Usage
-I used ChatGPT to help with:
+CI/CD configuration
 
-*Writing and debugging the Dijkstra algorithm code
+Documentation formatting
 
-*Setting up the project structure and packaging
-
-*Creating test cases and CI/CD configuration
-
-Using AI helped me to work faster and improve code quality.
-4/5
-
----
-
-## Contact
+📧 CONTACT
 Author: Aybuke Kucuk
 Email: aaybukekucuk@gmail.com
-GitHub: https://github.com/GMT-211-Data-Structures-and-Algorithms/python-packaging-admin-aaybukekucuk
-
----
-
-=======
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/i1ecLyyK)
->>>>>>> 7bcf8f4beab1045827e7435a462c0f52e8a17316
+GitHub: python-packaging-admin-aaybukekucuk
