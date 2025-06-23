@@ -28,6 +28,17 @@ pip install --index-url https://test.pypi.org/simple/ shortestpath21967646
 ```
 
 ---
+## Read the Docs
+This allows easy access to detailed information, usage instructions, and API references in a well-organized 
+and user-friendly format.
+You can view the latest documentation here:
+
+![Ekran görüntüsü 2025-06-23 043255](https://github.com/user-attachments/assets/6bf0bedc-25ea-4b08-9326-7711132c249e)
+
+By using ReadTheDocs, I ensure that the documentation is always up-to-date with the latest changes pushed to 
+the repository, improving the overall usability and accessibility of the project.
+
+---
 
 ## Usage Example
 
@@ -117,6 +128,19 @@ I used **ChatGPT** to:
 
 AI support helped me write better, faster, and more organized code.
 Usage Level: 4/5
+
+---
+
+## Logging Usage
+In this project, I integrated Python's built-in **logging** module to record important events, 
+informational messages, and errors during the execution of the code. This helps in debugging and monitoring 
+the flow of the program effectively.
+
+By setting different logging levels (e.g., DEBUG, INFO, WARNING), I can control the verbosity of the logs, 
+allowing me to see either detailed debug information or only critical issues as needed.
+
+Using logging improves the maintainability of the project and makes it easier to trace issues or unexpected 
+behaviors during development and future updates.
 
 ---
 
