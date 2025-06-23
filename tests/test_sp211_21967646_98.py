@@ -1,8 +1,9 @@
+import logging
 import sys
 import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from sp211_21967646_98.sp211_21967646_98 import dijkstra
+from sp211_21967646_98.sp211_21967646_98 import dijkstra, set_log_level
 
 def test_dijkstra_simple():
     graph = {
@@ -11,17 +12,16 @@ def test_dijkstra_simple():
         'C': [('D', 1)],
         'D': []
     }
-
     result = dijkstra(graph, 'A')
-    print(result)
-
     assert result['D'] == 4
     assert result['C'] == 3
     assert result['B'] == 1
     assert result['A'] == 0
 
-def test_set_log_level(caplog):
+def test_set_log_level():
     from sp211_21967646_98.sp211_21967646_98 import set_log_level
+    import logging
 
     set_log_level("DEBUG")
-    assert caplog.level == 10  # 10 = DEBUG
+    current_level = logging.getLogger().getEffectiveLevel()
+    assert current_level == logging.DEBUG
