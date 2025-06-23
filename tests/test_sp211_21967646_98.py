@@ -17,9 +17,10 @@ def test_dijkstra_simple():
     assert result['B'] == 1
     assert result['A'] == 0
 
-def test_set_log_level(caplog):
+def test_set_log_level():
     from sp211_21967646_98.sp211_21967646_98 import set_log_level
+    import logging
 
-    with caplog.at_level("INFO"):
-        set_log_level("DEBUG")
-        assert any(record.levelno == logging.INFO for record in caplog.records)
+    set_log_level("DEBUG")
+    current_level = logging.getLogger().getEffectiveLevel()
+    assert current_level == logging.DEBUG
