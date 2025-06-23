@@ -116,6 +116,7 @@ I used **ChatGPT** to:
 - Generate full Sphinx documentation
 
 AI support helped me write better, faster, and more organized code.
+Usage Level: 4/5
 
 ---
 
