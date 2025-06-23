@@ -34,7 +34,9 @@ You can install the package from TestPyPI using:
 ```bash
 pip install --index-url https://test.pypi.org/simple/ shortestpath21967646
 
-Usage Example
+---
+
+## Usage Example
 from sp211_21967646_98.sp211_21967646_98 import dijkstra
 
 graph = {
@@ -51,7 +53,9 @@ Expected output:
 
 {'A': 0, 'B': 1, 'C': 3, 'D': 4}
 
-Project Structure
+---
+
+## Project Structure
 
 sp211_21967646_98_(2)/
 ├── sp211_21967646_98/
@@ -67,6 +71,8 @@ sp211_21967646_98_(2)/
 │       └── python-test.yml      # GitHub Actions workflow for CI/CD
 ├── dist/                        # Distribution files for packaging
 └── docs/                        # Documentation files (Sphinx)
+
+
 
 Continuous Integration / Delivery
 This project uses GitHub Actions to:
