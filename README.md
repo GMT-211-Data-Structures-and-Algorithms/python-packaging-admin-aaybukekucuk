@@ -33,7 +33,9 @@ You can install the package from TestPyPI using:
 ```bash
 pip install --index-url https://test.pypi.org/simple/ shortestpath21967646
 
-Usage Example
+---
+
+## Usage Example
 from sp211_21967646_98.sp211_21967646_98 import dijkstra
 
 graph = {
@@ -50,7 +52,9 @@ Expected output:
 
 {'A': 0, 'B': 1, 'C': 3, 'D': 4}
 
-Project Structure
+---
+
+## Project Structure
 
 sp211_21967646_98_(2)/
 ├── sp211_21967646_98/
@@ -67,30 +71,39 @@ sp211_21967646_98_(2)/
 ├── dist/                        # Distribution files for packaging
 └── docs/                        # Documentation files (Sphinx)
 
-Continuous Integration / Delivery
+---
+
+## Continuous Integration / Delivery
 This project uses GitHub Actions to:
 
-Automatically run tests on every push
+*Automatically run tests on every push
 
-Build and upload the package to TestPyPI automatically
+*Build and upload the package to TestPyPI automatically
 
-This helps maintain code quality and simplifies updates.
+*This helps maintain code quality and simplifies updates.
 
-AI Usage
+---
+
+## AI Usage
 I used ChatGPT to help with:
 
-Writing and debugging the Dijkstra algorithm code
+*Writing and debugging the Dijkstra algorithm code
 
-Setting up the project structure and packaging
+*Setting up the project structure and packaging
 
-Creating test cases and CI/CD configuration
+*Creating test cases and CI/CD configuration
 
 Using AI helped me to work faster and improve code quality.
+4/5
 
-Contact
+---
+
+## Contact
 Author: Aybuke Kucuk
 Email: aaybukekucuk@gmail.com
 GitHub: https://github.com/GMT-211-Data-Structures-and-Algorithms/python-packaging-admin-aaybukekucuk
+
+---
 
 =======
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/i1ecLyyK)
