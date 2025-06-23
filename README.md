@@ -7,14 +7,12 @@ It is designed to be simple, testable, and ready for deployment on TestPyPI.
 
 ## Features
 
-- Calculates shortest paths using Dijkstra’s algorithm  
-- Takes graph input as a dictionary  
-- Includes logging support  
-- Tested with `pytest`  
-- Includes GitHub Actions CI/CD  
-- Packaged and published to TestPyPI  
-- Sphinx documentation support  
-- AI-assisted code development (with ChatGPT)
+| Feature             | Description                               |
+|---------------------|-------------------------------------------|
+| Shortest path search | Finds shortest path with Dijkstra method |
+| Logging             | Tracks important steps in the algorithm   |
+| Unit Testing        | Tested using pytest for reliability       |
+| Easy Installation   | Available on TestPyPI for quick setup     |
 
 ---
 
