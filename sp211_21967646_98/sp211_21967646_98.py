@@ -11,6 +11,7 @@ def set_log_level(level_name):
         raise ValueError(f'Invalid log level: {level_name}')
     logging.getLogger().setLevel(level)
     logger.info(f"Logging level set to {level_name}")
+    logger.debug("Logging level set to DEBUG")
 
 def dijkstra(graph, start):
     logger.info(f"Starting Dijkstra from node: {start}")

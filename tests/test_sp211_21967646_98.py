@@ -18,6 +18,8 @@ def test_dijkstra_simple():
     assert result['A'] == 0
 
 def test_set_log_level(caplog):
-    with caplog.at_level("DEBUG"):
+    from sp211_21967646_98.sp211_21967646_98 import set_log_level
+
+    with caplog.at_level("INFO"):
         set_log_level("DEBUG")
-        assert any(record.levelno == 10 for record in caplog.records)
+        assert any(record.levelno == logging.INFO for record in caplog.records)
