@@ -26,3 +26,9 @@ def dijkstra(graph, start):
                 heapq.heappush(pq, (distance, neighbor))
 
     return distances
+
+def set_log_level(level_name):
+    """Change the logging level dynamically."""
+    level = getattr(logging, level_name.upper(), logging.INFO)
+    logger.setLevel(level)
+    logger.info(f"Logging level set to {level_name.upper()}")
