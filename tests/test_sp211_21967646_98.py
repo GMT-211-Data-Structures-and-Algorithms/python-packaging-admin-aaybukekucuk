@@ -23,7 +23,7 @@ def test_dijkstra_simple():
 def test_set_log_level(caplog):
     from sp211_21967646_98.sp211_21967646_98 import set_log_level
 
-    set_log_level("DEBUG")
-
-    # caplog.records listesi içinde log kayıtları var, ilk kaydın levelno'su 10 mu kontrol edelim
-    assert any(record.levelno == 10 for record in caplog.records)
+    with caplog.at_level("DEBUG"):
+        set_log_level("DEBUG")
+        # caplog.records içindeki herhangi bir log kaydının seviyesinin DEBUG olduğunu doğrula
+        assert any(record.levelno == 10 for record in caplog.records)
