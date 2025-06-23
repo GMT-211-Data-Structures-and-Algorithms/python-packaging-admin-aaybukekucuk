@@ -24,4 +24,6 @@ def test_set_log_level(caplog):
     from sp211_21967646_98.sp211_21967646_98 import set_log_level
 
     set_log_level("DEBUG")
-    assert caplog.level == 10  # 10 = DEBUG
+
+    # caplog.records listesi içinde log kayıtları var, ilk kaydın levelno'su 10 mu kontrol edelim
+    assert any(record.levelno == 10 for record in caplog.records)
