@@ -19,3 +19,9 @@ def test_dijkstra_simple():
     assert result['C'] == 3
     assert result['B'] == 1
     assert result['A'] == 0
+
+def test_set_log_level(caplog):
+    from sp211_21967646_98.sp211_21967646_98 import set_log_level
+
+    set_log_level("DEBUG")
+    assert caplog.level == 10  # 10 = DEBUG
