@@ -79,7 +79,7 @@ sp211_21967646_98_(2)/
 
 All unit tests successfully passed.
 
-![Tests Passed](./screenshots/pytest_passed.png)
+![Ekran görüntüsü 2025-06-23 024354](https://github.com/user-attachments/assets/f87feb6f-1284-4295-91ac-80a3f3a3f8fe)
 
 ### 📦 Package Uploaded to TestPyPI
 
